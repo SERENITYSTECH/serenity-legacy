@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wziJUQpnVYU1CeBjcQqpZ2x39ZDVQGwpyoziwtItduE=",
+  "Source": "API_SerenityShield",
+  "BasePath": "_content/API_SerenityShield",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

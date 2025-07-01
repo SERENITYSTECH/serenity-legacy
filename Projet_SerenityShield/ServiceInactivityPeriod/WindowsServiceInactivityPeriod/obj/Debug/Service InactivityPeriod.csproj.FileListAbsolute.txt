@@ -1,0 +1,78 @@
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Service nactivityPeriod.exe.config
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Service nactivityPeriod.exe
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Service nactivityPeriod.pdb
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Newtonsoft.Json.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\SendGrid.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\StarkbankEcdsa.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Buffers.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Memory.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.AccessControl.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.Permissions.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.ValueTuple.dll
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Newtonsoft.Json.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\SendGrid.pdb
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\SendGrid.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Buffers.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Memory.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.AccessControl.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.Permissions.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.ValueTuple.xml
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.SuggestedBindingRedirects.cache
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\WindowsServiceInactivityPeriod.ProjectInstaller.resources
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.GenerateResource.cache
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.CoreCompileInputs.cache
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.CopyComplete
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service nactivityPeriod.exe
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service nactivityPeriod.pdb
+C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.AssemblyReference.cache
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Service nactivityPeriod.exe.config
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Service nactivityPeriod.exe
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Service nactivityPeriod.pdb
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Newtonsoft.Json.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\SendGrid.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\StarkbankEcdsa.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Buffers.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Memory.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.AccessControl.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.Permissions.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.ValueTuple.dll
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\Newtonsoft.Json.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\SendGrid.pdb
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\SendGrid.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Buffers.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Memory.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.AccessControl.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.Permissions.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\System.ValueTuple.xml
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.AssemblyReference.cache
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.SuggestedBindingRedirects.cache
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\WindowsServiceInactivityPeriod.ProjectInstaller.resources
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.GenerateResource.cache
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.CoreCompileInputs.cache
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service InactivityPeriod.csproj.CopyComplete
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service nactivityPeriod.exe
+C:\Users\KUNZ\source\repos\ServiceInactivityPeriod\WindowsServiceInactivityPeriod\obj\Debug\Service nactivityPeriod.pdb

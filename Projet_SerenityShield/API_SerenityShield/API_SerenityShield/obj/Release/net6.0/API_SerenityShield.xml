@@ -1,0 +1,741 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API_SerenityShield</name>
+    </assembly>
+    <members>
+        <member name="M:API_SerenityShield.Controllers.authController.Login(API_SerenityShield.Models.LoginModelCheckCode)">
+            <summary>
+            Get Bearer Token From Login
+            </summary>
+            <remarks>
+            Need publicKey code and int[] (int array)
+            </remarks>
+            <response code="200">Return Bearer token or empty Json</response> 
+            <response code="400">If the item is null</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:API_SerenityShield.Controllers.authController.VerifyAllowedPublicKeyl(API_SerenityShield.Models.AllowedPK)" -->
+        <member name="M:API_SerenityShield.Controllers.authController.VerifyCodeEmail(API_SerenityShield.Models.NewLoginModelCheckCode)">
+            <summary>
+            Get Boolean to verify code.
+            </summary>
+            <remarks>
+            Need  need Bearer Token and code sended
+            </remarks>
+            <response code="200">Return Boolean</response> 
+            <response code="400">If the item is null</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.authController.VerifyCodeSms(API_SerenityShield.Models.NewLoginModelCheckCode)">
+            <summary>
+            Get Boolean to verify code.
+            </summary>
+            <remarks>
+            Need  need Bearer Token and code sended
+            </remarks>
+            <response code="200">Return Boolean</response> 
+            <response code="400">If the item is null</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.authController.ActivateUserAfterVerification">
+            <summary>
+            Get Boolean to verify code.
+            </summary>
+            <remarks>
+            Need  need Bearer Token (after verify sms code and Email code from front)
+            </remarks>
+            <response code="200">Return Boolean</response> 
+            <response code="400">If the item is null</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.getController.Me">
+            <summary>
+            Select IUser
+            </summary>
+            <remarks>
+            Just Need Bearer in HTTP REQUEST HEADER
+            </remarks>
+            <response code="200">Return IUser</response> 
+            <response code="400">If the item is null</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.getController.New_Customer(API_SerenityShield.Models.NewUserModel)">
+            <summary>
+            Creates New User
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /me
+                {                
+                  "publicKey": "000000",
+                  "typeWallet": "METAMASK",
+                  "idTypeWallet": "xxxxxx",
+                  "phone": "+33645213254",
+                  "email": "john.doe@test.com",
+                  "firstName": "John",
+                  "lastname": "Doe",
+                  "idCard": "789456321",
+                  "passport": "U32456",
+                  "addedSecurity": "185059500036"       
+                }
+            </remarks>
+            <param name="newLoginModel"></param>
+            <returns>return Bearer for verification code</returns>
+            <response code="200">Returns the newly created User</response>
+            <response code="400">If the user is not inserted</response>
+            <response code="500">Internal Error</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.getController.UpdateMyAccount(API_SerenityShield.Models.DAO.MyAccountModel)">
+            <summary>
+            Update User
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PATCH /me
+                {        
+                   "phone": "+33645213254",
+                   "email": "john.doe@test.com",
+                   "firstName": "John",
+                   "lastname": "Doe",
+                   "idCard": "789456321",
+                   "passport": "U32456",
+                   "addedSecurity": "185059500036"        
+                }
+            </remarks>
+            <param name="model"></param>
+            <returns>return IUser Updated </returns>
+            <response code="200">Returns the user updated</response>
+            <response code="400">If the user is not updated</response>
+            <response code="500">Internal Error</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.getController.ResendPinEmail">
+            <summary>
+            Resend Email Code
+            </summary>
+            <remarks>
+            Just Need Bearer in HTTP REQUEST HEADER
+            </remarks>
+            <response code="200">return a boolean </response> 
+            <response code="400">If mail is not send</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.getController.ReSendPinSms">
+            <summary>
+            Resend Sms Code
+            </summary>
+            <remarks>
+            Just Need Bearer in HTTP REQUEST HEADER
+            </remarks>
+            <response code="200">return a boolean </response> 
+            <response code="400">If sms is not send</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.getController.DesactiveUser">
+            <summary>
+            Desactive User
+            </summary>
+            <remarks>
+            Just Need Bearer in HTTP REQUEST HEADER
+            </remarks>
+            <response code="200">return a boolean </response> 
+            <response code="403">If a verication is false</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.getController.InsertSecretPK(API_SerenityShield.Models.SecretPublicKey)">
+            <summary>
+            check if exist wallet secret , if no insert it 
+            </summary>
+            <remarks>
+            Need Bearer in HTTP REQUEST HEADER and secret public key
+            </remarks>
+            <response code="200">return a boolean </response> 
+            <response code="400">If mail is not send</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.getController.ExistSecretWallet(API_SerenityShield.Models.ExistSecretPublicKey)">
+            <summary>
+            check if exist wallet metamask 
+            </summary>
+            <remarks>
+            Need Bearer in HTTP REQUEST HEADER and metamask public key
+            </remarks>
+            <response code="200">return a boolean </response> 
+            <response code="400">If mail is not send</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:API_SerenityShield.Controllers.getController.ExistMetamaskWallet(API_SerenityShield.Models.ExistMetamaskPublicKey)" -->
+        <member name="M:API_SerenityShield.Controllers.HistoryUserController.GetListPlan">
+            <summary>
+            Get User History
+            </summary>
+            <remarks>
+             Need Bearer in Header.
+            </remarks>
+            <response code="200">Return list History</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.HistoryUserController.InsertHistory(System.String)">
+            <summary>
+            Get User History
+            </summary>
+            <remarks>
+             Need Bearer in Header.
+            </remarks>
+            <response code="200">Return list History</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.manageheirController.GetHeir(System.String)">
+            <summary>
+            Select IHeir
+            </summary>
+            <remarks>
+            param idHeir
+            </remarks>
+            <response code="200">Return IHeir</response> 
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.manageheirController.GetListHeir">
+            <summary>
+            Select ListIHeir
+            </summary>
+            <remarks>
+            Just Need Bearer in HTTP REQUEST HEADER
+            </remarks>
+            <response code="200">Return List IHeir</response> 
+            <response code="400">If the item is null</response> 
+            <response code="401">If there is not Bearer</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.manageheirController.New_Heir(API_SerenityShield.Models.DAO.NewHeirModel)">
+            <summary>
+            Insert New Heir
+            </summary>
+            <remarks>
+             Need Bearer in HTTP REQUEST HEADER an Heir 's params
+            </remarks>
+            <response code="200">Return  IHeir</response> 
+            <response code="400">If the item is null</response> 
+            <response code="401">If there is not Bearer</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.manageheirController.UpdateHeirAccount(API_SerenityShield.Models.DAO.UpdateHeirModel)">
+            <summary>
+            Update  Heir
+            </summary>
+            <remarks>
+             Need Bearer in HTTP REQUEST HEADER an Heir 's params
+            </remarks>
+            <response code="200">Return  IHeir</response> 
+            <response code="400">If the item is null</response> 
+            <response code="401">If there is not Bearer</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.manageheirController.DeleteHeirAccount(API_SerenityShield.Models.DAO.HeirModel)">
+            <summary>
+            Get Boolean to verify deleting.
+            </summary>
+            <remarks>
+            Need  Bearer Token and idHeir
+            </remarks>
+            <response code="200">Return Boolean</response> 
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.InsertPersonnalStrongbox(API_SerenityShield.Models.DAO.PersonnalStrongboxInsertModel)">
+             <summary>
+             insert a personnal strongbox.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>insert a personnal strongbox</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.UpdatePersonnalStrongbox(API_SerenityShield.Models.DAO.PersonnalStrongboxUpdateModel)">
+             <summary>
+             updtate a personnal strongbox.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a personnal strongbox</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.DeletePersonnalStrongbox(System.String)">
+             <summary>
+             delete a personnal strongbox.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a personnal strongbox</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.GetListPersonnalStrongbox">
+             <summary>
+             Get List of personnal strongbox.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name=""></param>
+             <returns>Get List of personnal strongbox</returns>
+             <response code="200">Returns the list</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.GetPersonnalStrongboxById(System.String)">
+             <summary>
+             Get personnal strongbox.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name=""></param>
+             <returns>Get personnal strongbox</returns>
+             <response code="200">Returns the list</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.InsertContentWalletDex(API_SerenityShield.Models.DAO.ContentwalletDexInsertModel)">
+             <summary>
+             insert a ContentWalletDex.
+             </summary>
+             <remarks>
+            Need  Bearer Token ,param "personnal" the parameter is used to identify if the insertion is for a personal strongbox or a stronfbox for heir true for personnal false for Heir
+             </remarks>
+             <param name="info"></param>
+             <returns>insert a ContentWalletDex</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.UpdateIStrongboxContentWalletDex(API_SerenityShield.Models.DAO.ContentwalletDexUpdateModel)">
+             <summary>
+             updtate a IStrongboxContentWalletDex.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a  IStrongboxContentWalletDex</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.DeleteIStrongboxContentWalletDex(API_SerenityShield.Models.DAO.ContentwalletDexDeleteModel)">
+             <summary>
+             delete a StrongboxContentWalletDex.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>delete a StrongboxContentWalletDex</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.InsertContentWalletCex(API_SerenityShield.Models.DAO.ContentwalletCexInsertModel)">
+             <summary>
+             insert a ContentWalletCex.
+             </summary>
+             <remarks>
+            Need  Bearer Token ,param "personnal" the parameter is used to identify if the insertion is for a personal strongbox or a stronfbox for heir true for personnal false for Heir
+             </remarks>
+             <param name="info"></param>
+             <returns>insert a ContentWalletCex</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.UpdateIStrongboxContentWalletCex(API_SerenityShield.Models.DAO.ContentwalletCexUpdateModel)">
+             <summary>
+             updtate a IStrongboxContentWalletCex.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a  IStrongboxContentWalletDex</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.DeleteIStrongboxContentWalletCex(API_SerenityShield.Models.DAO.ContentwalletCexDeleteModel)">
+             <summary>
+             delete a StrongboxContentWalletCex.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>delete a StrongboxContentWalletCex</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.InsertContentWalletMobile(API_SerenityShield.Models.DAO.ContentwalletMobileInsertModel)">
+             <summary>
+             insert a ContentWalletMobile.
+             </summary>
+             <remarks>
+            Need  Bearer Token ,param "personnal" the parameter is used to identify if the insertion is for a personal strongbox or a stronfbox for heir true for personnal false for Heir
+             </remarks>
+             <param name="info"></param>
+             <returns>insert a ContentWalletMobile</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.UpdateIStrongboxContentWalletMobile(API_SerenityShield.Models.DAO.ContentwalletMobileUpdateModel)">
+             <summary>
+             updtate a IStrongboxContentWalletMobile.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a  IStrongboxContentWalletMobile</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.DeleteIStrongboxContentWalletMobile(API_SerenityShield.Models.DAO.ContentwalletMobileDeleteModel)">
+             <summary>
+             delete a StrongboxContentWalletMobile.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>delete a StrongboxContentWalletMobile</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.InsertContentWalletDesktop(API_SerenityShield.Models.DAO.ContentwalletDesktopInsertModel)">
+             <summary>
+             insert a ContentWalleDesktop.
+             </summary>
+             <remarks>
+            Need  Bearer Token ,param "personnal" the parameter is used to identify if the insertion is for a personal strongbox or a stronfbox for heir true for personnal false for Heir
+             </remarks>
+             <param name="info"></param>
+             <returns>insert a ContentWalleDesktop</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.UpdateIStrongboxContentWalletDesktop(API_SerenityShield.Models.DAO.ContentwalletDesktopUpdateModel)">
+             <summary>
+             updtate a IStrongboxContentWalletMobile.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a  IStrongboxContentWalletMobile</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.DeleteIStrongboxContentWalletDesktop(API_SerenityShield.Models.DAO.ContentwalletDesktopDeleteModel)">
+             <summary>
+             delete a StrongboxContentWalletDesktop.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>delete a StrongboxContentWalletDesktop</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.InsertContentWalletHardware(API_SerenityShield.Models.DAO.ContentwalletHardwareInsertModel)">
+             <summary>
+             insert a ContentWallethardware.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>insert a ContentWallethardware</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.UpdateIStrongboxContentWalletHardware(API_SerenityShield.Models.DAO.ContentwalletHardwareUpdateModel)">
+             <summary>
+             updtate a IStrongboxContentWalletMobile.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a  IStrongboxContentWalletMobile</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.PersonnalStrongboxController.DeleteIStrongboxContentWalletHardware(API_SerenityShield.Models.DAO.ContentwalletHardwareDeleteModel)">
+             <summary>
+             delete a StrongboxContentWalletHardware.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>delete a StrongboxContentWalletHardware</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SecretContractController.GetSecretContract">
+            <summary>
+            Select IUser
+            </summary>
+            <remarks>
+            Just Need Bearer in HTTP REQUEST HEADER
+            </remarks>
+            <response code="200">Return IUser</response> 
+            <response code="400">If the item is null</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SecretContractController.FileToByteArray(System.String)">
+            <summary>
+            Function to get byte array from a file
+            </summary>
+            <param name="_FileName">File name to get byte array</param>
+            <returns>Byte Array</returns>
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SecretContractController.GetSecretContract64">
+            <summary>
+            Select IUser
+            </summary>
+            <remarks>
+            Just Need Bearer in HTTP REQUEST HEADER
+            </remarks>
+            <response code="200">Return IUser</response> 
+            <response code="400">If the item is null</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.StrongBoxHeirController.InsertStrongoxForHeir(API_SerenityShield.Models.DAO.StrongboxForHeirInsertModel)">
+             <summary>
+             insert a  strongbox for Heir.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>insert a  strongbox for Heir.</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.StrongBoxHeirController.UpdateStrongboxForHeir(API_SerenityShield.Models.DAO.StrongboxForHeirUpdateModel)">
+             <summary>
+             update a strongbox-for-heir.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a personnal strongbox</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.StrongBoxHeirController.DeletePersonnalStrongbox(System.String)">
+             <summary>
+             delete a personnal strongbox.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="info"></param>
+             <returns>updtate a personnal strongbox</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.StrongBoxHeirController.GetListStrongboxForHeir">
+             <summary>
+             Get List of stronbox for Heir.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name=""></param>
+             <returns>Get List of stronbox for Heir.</returns>
+             <response code="200">Returns the list</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.StrongBoxHeirController.GetListStrongboxForHeirById(System.String)">
+             <summary>
+             Get stronbox for Heir.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name=""></param>
+             <returns>Get List  for Heir.</returns>
+             <response code="200">Returns the strongbox</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.StrongBoxHeirController.GetListStrongboxHeritage">
+             <summary>
+             Get List of stronbox heritage.
+             </summary>
+             <remarks>
+            Need  Bearer Token 
+             </remarks>
+             <param name=""></param>
+             <returns>Get List of stronboxheritage.</returns>
+             <response code="200">Returns the list</response>
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.StrongBoxHeirController.GetStrongboxHeritage(System.String)">
+             <summary>
+             Get stronbox heritage.
+             </summary>
+             <remarks>
+            Need  Bearer Token 
+             </remarks>
+             <param name=""></param>
+             <returns>Get List of stronboxheritage.</returns>
+             <response code="200">Returns the list</response>
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.subscriptionplanController.InsertCustomerPlan(API_SerenityShield.Models.DAO.CustomerPlanModel)">
+             <summary>
+             insert a customer plan.
+             </summary>
+             <remarks>
+            Need  Bearer Token
+             </remarks>
+             <param name="plan"></param>
+             <returns>insert a customer plan</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="403">If customer plan exit</response>   
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:API_SerenityShield.Controllers.subscriptionplanController.UpdateNewCustomerPlan(API_SerenityShield.Models.DAO.CustomerPlanModel)">
+            <summary>
+            Update Plan in case of the customer want to change his plan
+            </summary>
+            <remarks>
+            Need  Bearer Token 
+            </remarks>
+            <response code="201">Return Boolean</response> 
+            <response code="400">If the item is null</response> 
+            <response code="500">Internal Error</response>  
+        </member>
+        <member name="M:API_SerenityShield.Controllers.subscriptionplanController.GetListPlan">
+            <summary>
+            Get list Plan.
+            </summary>
+            <remarks>
+             No parameters it's open
+            </remarks>
+            <response code="200">Return list Plan</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.subscriptionplanController.GetListInvoice">
+            <summary>
+            Get list Iinvoice.
+            </summary>
+            <remarks>
+            Need  Bearer Token and code sended
+            </remarks>
+            <response code="200">Return list Plan</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.subscriptionplanController.GetInvoiceById(System.String)">
+            <summary>
+            Get  Iinvoice.
+            </summary>
+            <remarks>
+            Need  Bearer Token 
+            </remarks>
+            <response code="200">Return Invoice</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SupportedWalletController.GetSupportedWallet">
+            <summary>
+            Get list Supported Wallet.
+            </summary>
+            <remarks>
+            No Need  Bearer Token 
+            </remarks>
+            <response code="200">Return list Plan</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SupportedWalletController.GetListDex">
+            <summary>
+            Get list DEX.
+            </summary>
+            <remarks>
+             No parameters it's open
+            </remarks>
+            <response code="200">Return list DEX</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SupportedWalletController.GetListCex">
+            <summary>
+            Get list CEX.
+            </summary>
+            <remarks>
+             No parameters it's open
+            </remarks>
+            <response code="200">Return list CEX</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SupportedWalletController.GetListHardware">
+            <summary>
+            Get list Hardware.
+            </summary>
+            <remarks>
+             No parameters it's open
+            </remarks>
+            <response code="200">Return list Hardware</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SupportedWalletController.GetListDesktop">
+            <summary>
+            Get list Desktop.
+            </summary>
+            <remarks>
+             No parameters it's open
+            </remarks>
+            <response code="200">Return list Desktop</response> 
+        </member>
+        <member name="M:API_SerenityShield.Controllers.SupportedWalletController.GetListInactivityPeriod">
+            <summary>
+            Get list Inactivity period.
+            </summary>
+            <remarks>
+            No Need  Bearer Token 
+            </remarks>
+            <response code="200">Return list period</response> 
+        </member>
+        <member name="T:API_SerenityShield.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:API_SerenityShield.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:API_SerenityShield.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+mdp serveur xxl
+IP:217.160.249.161
+LOGIN:Administrator
+PASSWORD:$m7t4WwaPP
+
+dns hote:c045d31.online-server.cloud
+
+
+IONOS :   Login : hugues@serenityshield.io       Password: SernityShieldCrypto2ZeMoon!!
+GANDI :    Login : Hugh77                                        (même mot de passe)
