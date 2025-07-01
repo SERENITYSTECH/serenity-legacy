@@ -1,0 +1,39 @@
+﻿Installation de l'assembly 'C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.InstallLog
+   assemblypath = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe
+Installation du service SendEmailAfterInactivityPeriod en cours...
+Le service SendEmailAfterInactivityPeriod a été installé avec succès.
+Création d'une source EventLog SendEmailAfterInactivityPeriod dans le journal Application...
+Validation de l'assembly 'C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.InstallLog
+   assemblypath = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe
+Installation de l'assembly 'C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.InstallLog
+   assemblypath = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe
+Installation du service SendEmailAfterInactivityPeriod en cours...
+Création d'une source EventLog SendEmailAfterInactivityPeriod dans le journal Application...
+Restauration de l'assembly 'C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.InstallLog
+   assemblypath = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe
+Restauration de l'état précédent du journal des événements pour la source SendEmailAfterInactivityPeriod.
+Installation de l'assembly 'C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.InstallLog
+   assemblypath = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe
+Installation du service SendEmailAfterInactivityPeriod en cours...
+Création d'une source EventLog SendEmailAfterInactivityPeriod dans le journal Application...
+Restauration de l'assembly 'C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.InstallLog
+   assemblypath = C:\Users\KUNZ\source\repos\WindowsServiceInactivityPeriod\WindowsServiceInactivityPeriod\bin\Debug\WindowsServiceInactivityPeriod.exe
+Restauration de l'état précédent du journal des événements pour la source SendEmailAfterInactivityPeriod.

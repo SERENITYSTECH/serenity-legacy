@@ -1,0 +1,28 @@
+﻿[*.cs]
+
+# CA1416: Valider la compatibilité de la plateforme
+dotnet_diagnostic.CA1416.severity = none
+
+# CS8602: Déréférencement d'une éventuelle référence null.
+dotnet_diagnostic.CS8602.severity = none
+
+# CS8604: Existence possible d'un argument de référence null.
+dotnet_diagnostic.CS8604.severity = none
+
+# CS8601: Existence possible d'une assignation de référence null.
+dotnet_diagnostic.CS8601.severity = none
+
+# CS8600: Conversion de littéral ayant une valeur null ou d'une éventuelle valeur null en type non-nullable.
+dotnet_diagnostic.CS8600.severity = none
+
+# CS8618: Un champ non-nullable doit contenir une valeur non-null lors de la fermeture du constructeur. Envisagez de déclarer le champ comme nullable.
+dotnet_diagnostic.CS8618.severity = none
+
+# Default severity for analyzer diagnostics with category 'Style'
+dotnet_analyzer_diagnostic.category-Style.severity = none
+
+# SYSLIB0014: Le type ou le membre est obsolète
+dotnet_diagnostic.SYSLIB0014.severity = none
+
+# CS0618: Le type ou le membre est obsolète
+dotnet_diagnostic.CS0618.severity = none
